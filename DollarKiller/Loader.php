@@ -10,8 +10,6 @@ class Loader
 {
     static function autoload($class)
     {
-        var_dump($class);
-        echo '<br>';
        require BASEDIR.DIRECTORY_SEPARATOR.str_replace('\\',DIRECTORY_SEPARATOR,$class).'.php';
     }
 

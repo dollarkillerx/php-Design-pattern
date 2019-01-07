@@ -10,3 +10,4 @@ php Design pattern
 - 必须全部使用命名空间
 - 所有PHP文件必须自动载入,不能有include/require
 - 单一入口
+
