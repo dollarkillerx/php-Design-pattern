@@ -11,6 +11,12 @@ class Loader
     static function autoload($class)
     {
         var_dump($class);
-       require BASEDIR.DIRECTORY_SEPARATOR.str_repeat('\\',DIRECTORY_SEPARATOR,$class).'.php';
+        echo '<br>';
+       require BASEDIR.DIRECTORY_SEPARATOR.str_replace('\\',DIRECTORY_SEPARATOR,$class).'.php';
+    }
+
+    static function test()
+    {
+        echo 'this is test';
     }
 }

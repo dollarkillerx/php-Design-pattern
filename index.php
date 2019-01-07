@@ -8,6 +8,5 @@
 define('BASEDIR',__DIR__);
 require BASEDIR.'/DollarKiller/Loader.php';
 spl_autoload_register('\\DollarKiller\\Loader::autoload');
-DollarKiller\Loader::autoload();
-//DollarKiller\Objects::test();
-//App\Controller\Home\Index::test();
+DollarKiller\Objects::test();
+App\Controller\Home\Index::test();
